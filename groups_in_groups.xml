@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test_Suite_for_GroupsInGroups">
+    <test name="Groups in Groups">
+        <groups>
+            <define name="TestAllGroup">
+                <include name="Smoke"></include>
+                <include name="Regression"></include>
+            </define>
+            <run>
+                <include name="TestAllGroup"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.learning.testng.groupsingroups.Groups_In_Groups"></class>
+        </classes>
+    </test>
+</suite>

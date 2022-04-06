@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<!--    <groups>-->
+<!--        <run>-->
+<!--            <include name="SmokeTest"/>-->
+<!--        </run>-->
+<!--    </groups>-->
+
+    <test name="TestNG">
+        <classes>
+            <class name="com.learning.testng.Testng">
+                <methods>
+                    <include name="tes.*"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Car Loan">
+        <groups>
+            <run>
+                <include name="SmokeTest"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.learning.testng.loan.Car_Loan"/>
+        </classes>
+    </test>
+
+    <test name="Home Loan">
+        <classes>
+            <class name="com.learning.testng.loan.Home_Loan"/>
+        </classes>
+    </test>
+
+    <test name="Personal Loan">
+        <classes>
+            <class name="com.learning.testng.loan.Personal_Loan"/>
+        </classes>
+    </test>
+
+</suite>

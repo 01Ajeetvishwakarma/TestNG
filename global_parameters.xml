@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Global_ParaMeter_Suite">
+    <parameter name="a" value="3"></parameter>
+    <parameter name="b" value="5"></parameter>
+    <test name="Add">
+        <classes>
+            <class name="com.learning.testng.parameters.Add"></class>
+        </classes>
+    </test>
+    <test name="Sub">
+        <classes>
+            <class name="com.learning.testng.parameters.Sub"></class>
+        </classes>
+    </test>
+    <test name="Multi">
+        <classes>
+            <class name="com.learning.testng.parameters.Multi"></class>
+        </classes>
+    </test>
+</suite>

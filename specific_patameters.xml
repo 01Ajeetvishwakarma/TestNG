@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Specific_Parameter_Suite">
+    <test name="Fruits">
+        <parameter name="mango" value="Love MANGO"></parameter>
+        <parameter name="apple" value="Love APPLE"></parameter>
+        <classes>
+            <class name="com.learning.testng.parameters.Fruits"></class>
+        </classes>
+    </test>
+    <test name="Vegetables">
+        <parameter name="Cauliflower" value="Love Cauliflower"></parameter>
+        <parameter name="Ladyfinger" value="Love Ladyfinger"></parameter>
+        <classes>
+            <class name="com.learning.testng.parameters.Vegetables"></class>
+        </classes>
+    </test>
+</suite>
